@@ -1,6 +1,10 @@
 body{ padding: 0; margin: 0;}
 form{
     max-width: 25em;
-    margin:1em auto
+    margin:1em auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 /*Google fonts*/@import url('https://fonts.googleapis.com/css?family=Raleway');
+#del,#btn{
+    cursor: pointer;
+}
