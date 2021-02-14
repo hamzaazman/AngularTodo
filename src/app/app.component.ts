@@ -11,14 +11,19 @@ export class AppComponent {
   todoArray = []
 
 
-  addTodo(value){
+  addTodo(value) {
     this.todoArray.push(value)
   }
-  deleteItem(value){
-    this.todoArray.splice(0,1)
+  deleteItem() {
+    this.todoArray.splice(0, 1)
   }
-  todoSubmit(value:any){
-    this.todoArray.push(value)
+  
+  todoSubmit(value) {
+    if (value.todo !== "") {
+      this.todoArray.push(value.todo)      
+      }else{      
+        alert('Field required')
+      }
+        
   }
-
 }
