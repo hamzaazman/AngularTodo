@@ -2,19 +2,20 @@ body{ padding: 0; margin: 0;}
 form{
     max-width: 25em;
     margin:1em auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 /*Google fonts*/@import url('https://fonts.googleapis.com/css?family=Raleway');
 #del,#btn{
     cursor: pointer;
 }
-
-.example-form {
+.example-form,.example-full-width {
     min-width: 150px;
     max-width: 500px;
     width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
   }
-  
-  .example-full-width {
-    width: 100%;
-  }
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+ 
