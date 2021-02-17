@@ -11,14 +11,26 @@
         </mat-form-field>
         
       </div>
+      <p>
+        Options selected: {{select.selectedOptions.selected.length}}
+      </p>
     </div>
     <div class="data">
+      <!--
       <ul class="list-group list-group-flush">
         <li id="li" class="list-group-item" *ngFor="let item of todoArray">
           {{item}}
           <i id="del" class="material-icons float-right" (click)="deleteItem(item)">delete</i>
         </li>
-      </ul>
+      </ul>-->
+
+      <mat-selection-list #select>
+        <mat-list-option *ngFor="let shoe of todoArray">
+          {{shoe}}
+        </mat-list-option>
+      </mat-selection-list>
+      
+
     </div>
   </form>
 
