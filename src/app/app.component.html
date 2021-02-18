@@ -8,8 +8,8 @@
         <mat-form-field class="example-full-width">
           <mat-label>Todos</mat-label>
           <input type="text" ngModel #items name="todo" matInput placeholder="Write somethinks" value="">
-        </mat-form-field>
-        
+        </mat-form-field>    
+           
       </div>
       <p>
         Options selected: {{select.selectedOptions.selected.length}}
@@ -25,12 +25,10 @@
       </ul>-->
 
       <mat-selection-list #select>
-        <mat-list-option *ngFor="let shoe of todoArray">
-          {{shoe}}
+        <mat-list-option *ngFor="let arr of todoArray">
+          {{arr}}
         </mat-list-option>
       </mat-selection-list>
-      
-
     </div>
   </form>
 
